@@ -5,3 +5,10 @@ site_author: "Jandali"
 
 repo_name: mkdoc-prototyp
 repo_url: https://github.com/a-jandali/mkdoc-prototyp
+
+theme:
+  name: material
+
+plugins:
+  - search
+  - blog
