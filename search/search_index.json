@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"mkdoc-prototyp","text":""},{"location":"test/","title":"Schnellstart","text":"<p>test</p>"},{"location":"blog/","title":"Blog","text":""}]}
