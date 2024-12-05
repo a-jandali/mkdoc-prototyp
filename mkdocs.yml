@@ -7,7 +7,6 @@ site_author: "Tawatchai Siripanya"
 repo_name: Databricks_User_Repo
 repo_url: https://github.com/munich-airport-azure-data-platform/Databricks_User_Repo
 
-
 theme:
   name: material
   logo: "/assets/img/fmg-logo.svg"  # Path to the logo
