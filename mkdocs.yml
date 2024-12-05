@@ -1,14 +1,80 @@
-site_name: prototyp
-site_url: "https://a-jandali.github.io/mkdoc-prototyp/"
-site_description: "prototyp Mkdoc"
-site_author: "Ja"
+site_name: "Benutzerhandbuch"
+site_url: "https://verbose-adventure-9pgogjn.pages.github.io/"
+site_description: "FMG-Databricks Assets BUndle Benutzerhandbuch"
+site_author: "Tawatchai Siripanya"
 
-repo_name: mkdoc-prototyp
-repo_url: https://github.com/a-jandali/mkdoc-prototyp
+# Repository
+repo_name: Databricks_User_Repo
+repo_url: https://github.com/munich-airport-azure-data-platform/Databricks_User_Repo
+
 
 theme:
   name: material
+  logo: "/assets/img/fmg-logo.svg"  # Path to the logo
+  favicon: "/assets/img/fmg-favicon.svg"  # Path to the favicon
+  palette:
+    # Light mode configuration
+    - scheme: default  # Light mode (default)
+      primary: blue
+      accent: light-blue
+      background: white
+      surface: white
+      on-primary: black
+      on-accent: black
+      on-surface: black
+      toggle:
+        icon: material/weather-night  # Icon for dark mode
+        name: Dark mode               # Name shown in light mode
+    # Dark mode configuration
+    - scheme: slate  # Dark mode
+      primary: blue-grey
+      accent: teal
+      background: '#121212'
+      surface: '#1E1E1E'
+      on-primary: white
+      on-accent: white
+      on-surface: white
+      toggle:
+        icon: material/weather-sunny  # Icon for light mode
+        name: Light mode              # Name shown in dark mode
+  font:
+    text: "Open Sans"  # Text font
+    code: "Fira Code"  # Code font
+  features:
+    # - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - content.code.annotate
+    - header.autohide
+    - palette.toggle  # Enables light/dark mode toggle icon
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Einführung: README.md
+  - Schnellstart: test.md
 
 plugins:
   - search
-  - blog
+  - tags
+
+
+extra: 
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/munich-airport-azure-data-platform/Databricks_User_Repo
+  
+  generator: false
